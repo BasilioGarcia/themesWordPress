@@ -10,3 +10,50 @@
     Tags: basiliogarcia, blog, portfolio, personal, flexbox, grid
     Text Domain: basiliogarciablog
 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --sans-font: "Noto Sans", sans-serif;
+    --serif-font: "Domine", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--sans-font);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-family: var(--serif-font);
+}
+
+h1{
+    font-weight: 400;
+}
+
+h2{
+
+}
+
+h3{
+    
+}
