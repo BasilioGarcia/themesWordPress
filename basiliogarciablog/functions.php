@@ -9,12 +9,16 @@ function basiliogarciablog_style() {
 add_action('wp_enqueue_scripts', 'basiliogarciablog_style');
 */
 
+function basiliogarciablog_setup() {
+    add_theme_support( 'post-thumbnails' );
+}
+add_action('after_setup_theme', 'basiliogarciablog_setup');
+
 function basiliogarciablog_menu() {
     register_nav_menus( array(
         'main' => __('Menú principal', 'basiliogarciablog'),
     ));
 }
-
 add_action('init', 'basiliogarciablog_menu');
 
 function basiliogarcia_filter_menu_li_id($menu_id, $item, $args, $depth) {
@@ -67,3 +71,5 @@ function basiliogarcia_filter_menu_class($classes, $item, $args, $depth) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'basiliogarcia_filter_menu_class', 10, 4);
+
+
