@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-sans: "Noto Sans", sans-serif;
+    --font-serif: "Domine", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-family: var(--font-serif);
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3.6rem;
+}

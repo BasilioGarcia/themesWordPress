@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 <body>
-<header>
+<header class="main-header">
+    <div class="main-header__top-bar">
+    </div>
+    <div class="center">
+
+    </div>
+
+
     <nav>
         <?php
         $args = [
