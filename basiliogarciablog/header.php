@@ -13,22 +13,29 @@
 <body>
 <header class="main-header">
     <div class="main-header__top-bar">
+        <div class="tool-bar">
+            mierda
+        </div>
     </div>
     <div class="center">
-
+        <div class="center__content">
+            <nav>
+                <?php
+                $args = [
+                    "theme_location" => "main",
+                    "container" => false,
+                    'menu_id'        => 'main-menu',
+                    'menu_class'     => 'main-menu',
+                    'link_before' => '<span>',
+                    'link_after'  => '</span>',
+                ];
+                wp_nav_menu($args)
+                ?>
+            </nav>
+        </div>
     </div>
 
 
-    <nav>
-        <?php
-        $args = [
-            "theme_location" => "main",
-            "container" => false,
-            'menu_id'        => 'main-menu',
-            'menu_class'     => 'main-menu',
-        ];
-        wp_nav_menu($args)
-        ?>
-    </nav>
+
     <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/prueba.jpeg" alt=""> -->
 </header>
