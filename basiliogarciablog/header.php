@@ -14,7 +14,7 @@
 <header class="main-header">
     <div class="main-header__top-bar">
         <div class="tool-bar">
-            mierda
+            <div class="tool-bar__hamburger-menu">---</div>
         </div>
     </div>
     <div class="center">
