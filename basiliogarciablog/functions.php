@@ -72,5 +72,3 @@ function basiliogarcia_filter_menu_class($classes, $item, $args, $depth) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'basiliogarcia_filter_menu_class', 10, 4);
-
-

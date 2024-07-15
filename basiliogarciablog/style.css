@@ -238,6 +238,10 @@ h3 {
             &.current a{
                 background: url('./img/07-menu-a3-bg.png') no-repeat;
             }
+
+            & a:hover span{
+                color: var(--red1);
+            }
         }
     }
 
@@ -251,6 +255,10 @@ h3 {
             & a:hover,
             &.current a {
                 background: url('./img/05-menu-a1-bg.png') no-repeat;
+            }
+
+            & a:hover span{
+                color: var(--red1);
             }
         }
     }
@@ -266,6 +274,10 @@ h3 {
             &.current a {
                 background: url('./img/06-menu-a2-bg.png') no-repeat;
             }
+
+            & a:hover span{
+                color: var(--red1);
+            }
         }
     }
 
@@ -280,9 +292,18 @@ h3 {
             &.current a {
                 background: url('./img/08-menu-a4-bg.png') no-repeat;
             }
+
+            & a:hover span{
+                color: var(--red1);
+            }
         }
     }
+}
 
+.main-content{
+    width: 100%;
+    min-height: 100vh;
+    text-align: left;
 }
 
 /* Tablets y dispositivos medianos */
