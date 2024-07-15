@@ -19,6 +19,7 @@
     --black1: hsl(0, 0%, 0%);
     --grey1: hsl(0, 0%, 75%);
     --grey2: hsl(228, 36%, 86%);
+    --red1: hsl(359, 71%, 51%);
     --white1: hsl(0, 0%, 100%);
 }
 
@@ -206,19 +207,18 @@ h3 {
     .main-menu__projects a,
     .main-menu__aboutme a {
         display: none;
+        margin: 0 auto;
+
+        span {
+            text-transform: uppercase;
+            color: var(--black1);
+            font-size: 1.5rem
+        }
+
 
         @media (min-width: 1200px) {
             display: inline-block;
             font-family: var(--font-serif);
-        }
-    }
-
-    .main-menu__blog a{
-        @media (min-width: 1200px) {
-            background: url('./img/05-menu-a1-bg.png') no-repeat;
-            width: 164px;
-            height: 94px;
-            margin: 0 auto;
 
             span {
                 display: inline-block;
@@ -227,27 +227,63 @@ h3 {
         }
     }
 
-    .main-menu__categories a{
+    .main-menu__blog{
         @media (min-width: 1200px) {
-            background: url('./img/06-menu-a2-bg.png') no-repeat;
-            width: 142px;
-            height: 94px;
-            margin: 0 auto;
+            a {
+                width: 122px;
+                height: 94px;
+            }
 
-            span {
-                display: inline-block;
-                margin-top: 24px;
+            & a:hover,
+            &.current a{
+                background: url('./img/07-menu-a3-bg.png') no-repeat;
             }
         }
     }
 
+    .main-menu__categories{
+        @media (min-width: 1200px) {
+            a {
+                width: 164px;
+                height: 94px;
+            }
+
+            & a:hover,
+            &.current a {
+                background: url('./img/05-menu-a1-bg.png') no-repeat;
+            }
+        }
+    }
+
+    .main-menu__projects{
+        @media (min-width: 1200px) {
+            a {
+                width: 142px;
+                height: 94px;
+            }
+
+            & a:hover,
+            &.current a {
+                background: url('./img/06-menu-a2-bg.png') no-repeat;
+            }
+        }
+    }
+
+    .main-menu__aboutme{
+        @media (min-width: 1200px) {
+            a {
+                width: 125px;
+                height: 94px;
+            }
+
+            & a:hover,
+            &.current a {
+                background: url('./img/08-menu-a4-bg.png') no-repeat;
+            }
+        }
+    }
 
 }
-
-
-
-
-
 
 /* Tablets y dispositivos medianos */
 @media (min-width: 768px) {

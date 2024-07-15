@@ -46,6 +46,7 @@ function basiliogarcia_filter_menu_class($classes, $item, $args, $depth) {
             return !in_array($class, [
                     'current-menu-item',
                     'current_page_item',
+                    'current_page_parent',
                     'menu-item',
                     'menu-item-home',
                     'menu-item-object-page',
