@@ -84,6 +84,10 @@ h3 {
     width: 100%;
     height: 40px;
     background-color: var(--black1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .tool-bar{
@@ -190,6 +194,19 @@ h3 {
             z-index: -1;
         }
 
+        a {
+            margin-top: 10px;
+            display: inline-block;
+            width: 137px;
+            height: 117px;
+            background: url('./img/09-small-logo.png') center 0 no-repeat;
+            transition: filter 0.7s ease;
+        }
+
+        a:hover{
+            filter: brightness(1.3) contrast(1.2);
+        }
+
         @media (min-width: 1200px) {
             width: 227px;
             height: 255px;
@@ -198,6 +215,15 @@ h3 {
                 background: url('./img/01-badge.svg') center -2px no-repeat;
                 background-size: 227px 255px;
             }
+
+            a {
+                margin-top: 24px;
+                display: inline-block;
+                width: 187px;
+                height: /*160px*/ 177px;
+                background: url('./img/10-logo.png') center 0 no-repeat;
+            }
+
         }
 
     }
