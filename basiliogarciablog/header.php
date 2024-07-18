@@ -13,7 +13,26 @@
     <header class="main-header">
         <div class="main-header__top-bar">
             <div class="tool-bar">
-                <div class="tool-bar__hamburger-menu">---</div>
+
+                <div class="hamburger-menu">
+                    <input type="checkbox" class="hamburger-menu__checkbox" id="menu__checkbox">
+                    <label class="hamburger-menu__label" for="menu__checkbox"></label>
+                    <nav class="hamburger-menu__window">
+                        <?php
+                        $args = [
+                            "theme_location" => "main",
+                            "container" => false,
+                            'menu_id'        => 'hamburger-menu',
+                            'menu_class'     => 'hamburger-menu__menu',
+                            'link_before' => '<span>',
+                            'link_after'  => '</span>'
+                        ];
+                        wp_nav_menu($args)
+                        ?>
+                    </nav>
+                </div>
+
+
             </div>
         </div>
         <div class="center">

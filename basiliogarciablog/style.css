@@ -17,6 +17,7 @@
     --font-sans: "Noto Sans", sans-serif;
     --font-serif: "Domine", serif;
     --black1: hsl(0, 0%, 0%);
+    --black2: hsla(0, 0%, 0%, 0.9);
     --grey1: hsl(0, 0%, 75%);
     --grey2: hsl(228, 36%, 86%);
     --red1: hsl(359, 71%, 51%);
@@ -91,10 +92,10 @@ h3 {
 }
 
 .tool-bar{
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     margin: auto;
     width: 90%;
-    text-align: left;
     color: white;
 
     @media (min-width: 1200px) {
@@ -109,16 +110,90 @@ h3 {
         width: 1450px;
     }
 
-    .tool-bar__hamburger-menu {
-        display: block;
+
+
+    .hamburger-menu {
 
         @media (min-width: 1200px) {
             display: none;
         }
+
+        .hamburger-menu__checkbox {
+            display: none;
+        }
+
+        .hamburger-menu__label {
+            cursor: pointer;
+            z-index: 102;
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 40px;
+            background: url('./img/11-hamburger.svg') no-repeat;
+            background-size: 30px 40px;
+        }
+
+        .hamburger-menu__window {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--black2);
+            z-index: 101;
+            transform: translateX(100%);
+            transition: transform 0.3s;
+
+            .hamburger-menu__menu {
+                display: flex;
+                flex-direction: column;
+
+                li:nth-child(3){
+                    order: 1;
+                }
+                li:nth-child(1){
+                    order: 2;
+                }
+                li:nth-child(2){
+                    order: 3;
+                }
+                li:nth-child(4){
+                    order: 4;
+                }
+                li:nth-child(5){
+                    order: 5;
+                }
+            }
+        }
+
+        .hamburger-menu__checkbox:checked + .hamburger-menu__label{
+            background: url('./img/12-close.svg') no-repeat;
+            background-size: 36px 40px;
+            background-position: left center;
+        }
+
+        .hamburger-menu__checkbox:checked + .hamburger-menu__label+ .hamburger-menu__window {
+            transform: translateX(0);
+        }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
 
 .center {
     text-align: center;
@@ -163,6 +238,7 @@ h3 {
 
 .main-menu {
     display: block;
+    margin-top: 40px;
 
     @media (min-width: 1200px) {
         display: grid;
