@@ -110,8 +110,6 @@ h3 {
         width: 1450px;
     }
 
-
-
     .hamburger-menu {
 
         @media (min-width: 1200px) {
@@ -191,19 +189,6 @@ h3 {
             transform: translateX(0);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .center {
@@ -415,8 +400,71 @@ h3 {
 
 .main-content{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 183px);
     text-align: left;
+
+    @media (min-width: 1200px) {
+        min-height: calc(100vh - 295px);
+    }
+
+    /*
+    .item:hover .polaroid:before {
+
+    }
+    */
+
+
+    /* about-me */
+    .about-me{
+        display: grid;
+        grid-template-columns: 30% auto;
+    }
+
+    .polaroid {
+        width: 100%;
+        display: inline-block;
+        margin-top: 2rem;
+        filter: grayscale(100%);
+
+        .polaroid__content {
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0 0.2rem 1.2rem hsla(0, 0%, 0%, 0.2);
+
+            &::before{
+                content: '';
+                position: absolute;
+                z-index: -1;
+                transition: all 0.35s;
+            }
+        }
+
+        &.photo1 {
+            transform: scale(0.8, 0.8) rotate(-5deg);
+            transition: all 0.35s;
+        }
+
+        &:hover {
+            filter: none;
+            transform: scale(1, 1) rotate(0deg);
+            transition: all 0.35s;
+        }
+
+        .polaroid__img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .polaroid__content {
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 2em;
+        }
+
+
+    }
+
+
 }
 
 /* Tablets y dispositivos medianos */
