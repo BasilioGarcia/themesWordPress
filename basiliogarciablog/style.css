@@ -20,6 +20,7 @@
     --black2: hsla(0, 0%, 0%, 0.9);
     --grey1: hsl(0, 0%, 75%);
     --grey2: hsl(228, 36%, 86%);
+    --grey3: hsl(0, 0%, 30%);
     --red1: hsl(359, 71%, 51%);
     --white1: hsl(0, 0%, 100%);
 }
@@ -418,6 +419,7 @@ h3 {
     .about-me{
         display: grid;
         grid-template-columns: 30% auto;
+        color: var(--grey3);
     }
 
     .polaroid {
