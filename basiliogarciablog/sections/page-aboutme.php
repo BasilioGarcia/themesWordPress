@@ -7,7 +7,7 @@ get_header(); ?>
         <div class="polaroid photo1">
             <div class="polaroid__content">
                 <img class="polaroid__img" src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg" alt="">
-                <span class="polaroid__caption">2024</span>
+                <span class="polaroid__caption">Kanban </span>
             </div>
         </div>
         <div>
@@ -15,15 +15,19 @@ get_header(); ?>
                 ¡Hola! Soy Basilio, pero puedes llamarme "Bas". ¡Bienvenido a mi blog sobre programación!.
             </p>
             <p>
-                Desde joven, siempre me ha apasionado el mundo de la tecnología y la programación, lo que me llevó a convertirme en programador informático.
+                Desde joven, siempre me ha fascinado el mundo de la tecnología y la programación, lo que me llevó a convertirme en programador informático.
+            </p>
+            <p>
+                Aunque he desempeñado diversas funciones, como diseño y análisis, en empresas del sector, con el paso de los años me he especializado como desarrollador full stack.
             </p>
 
             <!--
             apasionado
-
+            decir algo de la metodología agile
+            equipos pequeños de programadores
+            aunque he trabajado de empresas del sector
 
             ¡Hola! Soy un orgulloso miembro de la Generación X, nacido y criado en la hermosa región de Galicia.
-            Desde joven, siempre me ha fascinado el mundo de la tecnología y la programación, lo que me llevó a convertirme en un apasionado programador informático.
             Con el paso de los años, me especialicé como desarrollador full stack, lo que significa que tengo la habilidad de manejar tanto el desarrollo del front-end como del back-end de aplicaciones web.
             Esto me permite tener una visión completa de cada proyecto y asegurarme de que cada detalle, desde la interfaz de usuario hasta la infraestructura del servidor, funcione a la perfección.
             Mi carrera me ha llevado a trabajar en una variedad de proyectos emocionantes, desde pequeñas startups hasta grandes corporaciones, siempre buscando nuevas formas de innovar y mejorar la experiencia del usuario final.
