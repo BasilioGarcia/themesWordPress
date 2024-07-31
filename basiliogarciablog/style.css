@@ -273,7 +273,7 @@ h3 {
             width: 137px;
             height: 117px;
             background: url('./img/09-small-logo.png') center 0 no-repeat;
-            transition: filter 0.7s ease;
+            transition: filter 0.3s ease;
         }
 
         a:hover{

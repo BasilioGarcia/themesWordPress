@@ -4,23 +4,16 @@
  */
 get_header(); ?>
     <div class="about-me">
-        <div class="polaroid photo1">
-            <div class="polaroid__content">
-                <img class="polaroid__img" src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg" alt="">
-                <span class="polaroid__caption">Kanban </span>
-            </div>
-        </div>
         <div>
             <p>
-                ¡Hola! Soy Basilio, pero puedes llamarme "Bas". ¡Bienvenido a mi blog sobre programación!.
+                ¡Hola! Soy Basilio García, pero puedes llamarme "Bas". ¡Bienvenido a mi blog sobre programación!.
             </p>
             <p>
                 Desde joven, siempre me ha fascinado el mundo de la tecnología y la programación, lo que me llevó a convertirme en programador informático.
             </p>
             <p>
-                Aunque he desempeñado diversas funciones, como diseño y análisis, en empresas del sector, con el paso de los años me he especializado como desarrollador full stack.
+                Aunque he desempeñado diversas funciones -como diseño y análisis- en empresas del sector, con el paso de los años me he especializado como desarrollador full stack y entornos web.
             </p>
-
             <!--
             apasionado
             decir algo de la metodología agile
@@ -36,6 +29,12 @@ get_header(); ?>
              y te invito a unirte a mí en este viaje tecnológico. ¡Gracias por visitar y espero que disfrutes del contenido!
                 -->
 
+        </div>
+        <div class="polaroid photo1">
+            <div class="polaroid__content">
+                <img class="polaroid__img" src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg" alt="">
+                <span class="polaroid__caption">Kanban </span>
+            </div>
         </div>
     </div>
 
